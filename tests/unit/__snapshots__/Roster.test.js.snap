@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Roster Table should render correctly 1`] = `
+<main
+  className="Roster-main-2"
+>
+  <div
+    id="Roster"
+  >
+    <div
+      id="Dialog"
+    />
+    <div
+      classes="Roster-alignTop-7"
+    >
+      <div
+        className="Roster-col-8"
+      >
+        <h5
+          className="MuiTypography-root-25 MuiTypography-h5-41"
+        >
+          <em>
+            The
+          </em>
+           Roster
+        </h5>
+      </div>
+      <div
+        className="Roster-col-8"
+      >
+        <button
+          aria-label="Add"
+          className="MuiButtonBase-root-71 MuiFab-root-61 MuiFab-sizeSmall-69 Roster-fab-5"
+          disabled={false}
+          onBlur={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiFab-label-62"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-74"
+              focusable="false"
+              onClick={[Function]}
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </span>
+          <span
+            className="MuiTouchRipple-root-130"
+          />
+        </button>
+      </div>
+    </div>
+    <h6
+      className="MuiTypography-root-25 MuiTypography-h6-42"
+    >
+      
+    </h6>
+    <div
+      className="MuiPaper-root-83 MuiPaper-elevation2-87 MuiPaper-rounded-84 Roster-root-1"
+    >
+      <table
+        className="MuiTable-root-110 Roster-table-4"
+      >
+        <thead
+          className="MuiTableHead-root-111"
+        >
+          <tr
+            className="MuiTableRow-root-112 MuiTableRow-head-115"
+          >
+            <th
+              aria-sort={null}
+              className="MuiTableCell-root-117 MuiTableCell-head-118"
+              scope="col"
+            >
+              Player
+            </th>
+            <th
+              aria-sort={null}
+              className="MuiTableCell-root-117 MuiTableCell-head-118 MuiTableCell-alignRight-127"
+              scope="col"
+            >
+              Rating
+            </th>
+            <th
+              aria-sort={null}
+              className="MuiTableCell-root-117 MuiTableCell-head-118 MuiTableCell-alignRight-127"
+              scope="col"
+            >
+              Preferred Hand
+            </th>
+            <th
+              aria-sort={null}
+              className="MuiTableCell-root-117 MuiTableCell-head-118 MuiTableCell-alignCenter-126"
+              scope="col"
+            >
+              Remove
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="MuiTableBody-root-129"
+        />
+      </table>
+    </div>
+  </div>
+</main>
+`;

@@ -1,0 +1,27 @@
+main {
+  text-align: center;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.almostWidth {
+  width: 99%;
+}
+
+.justifyEnd {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flexGrid {
+  display: flex;
+  align-items: center;
+}
+
+.col {
+  flex: 1;
+}

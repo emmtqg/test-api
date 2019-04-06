@@ -1,0 +1,10 @@
+.center {
+  font-family: 'Raleway', sans-serif;
+  background-color: #1ABC9C;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

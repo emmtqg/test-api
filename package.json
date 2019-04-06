@@ -1,0 +1,63 @@
+{
+  "name": "players-react-skeleton",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel src/index.html -p 3000",
+    "build": "cross-env NODE_ENV=production parcel build index.html --public-url",
+    "e2e": "cypress open",
+    "lint:js": "eslint src/**/**/*.js src/**/**/*.jsx tests/**/**/*.js",
+    "lint:style": "stylelint src/**/**/*.css src/**/**/*.scss",
+    "test": "react-scripts test --env=jsdom",
+    "coverage": "react-scripts test --env=jsdom --coverage",
+    "eject": "react-scripts eject",
+    "flow": "flow",
+    "jest": "jest"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
+    "cross-env": "^5.2.0",
+    "cypress": "^3.0.2",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "enzyme-to-json": "^3.3.5",
+    "history": "^4.9.0",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.11",
+    "material-ui": "^0.20.2",
+    "parcel-bundler": ">=1.10.0",
+    "prop-types": "^15.7.2",
+    "react": "^15.4.0 || ^16.0.0",
+    "react-dom": "^15.4.0 || ^16.0.0",
+    "react-router": "^5.0.0",
+    "react-router-dom": "latest",
+    "react-scripts": "latest",
+    "react-test-renderer": "^16.8.6",
+    "sinon": "^7.3.1",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^22.4.1",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-node": "7.0.1",
+    "eslint-plugin-react": "^7.9.1",
+    "flow-bin": "^0.44.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest-svg-transformer": "^1.0.0",
+    "prettier": "^1.13.5",
+    "prettierrc": "0.0.0-5",
+    "stylelint": "^9.3.0",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
+  }
+}

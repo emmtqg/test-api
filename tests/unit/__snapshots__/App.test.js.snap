@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The App should render correctly 1`] = `
+<div
+  className="PlayersAppBar-root-1"
+>
+  <header
+    className="MuiPaper-root-16 MuiPaper-elevation4-22 MuiAppBar-root-7 MuiAppBar-positionFixed-8 MuiAppBar-colorPrimary-14 mui-fixed"
+    style={
+      Object {
+        "background": "#3f51b5",
+      }
+    }
+  >
+    <div
+      className="MuiToolbar-root-43 MuiToolbar-regular-45 MuiToolbar-gutters-44"
+    >
+      <img
+        alt="Alchemy Logo"
+        height="50"
+        src="test-file-stub"
+        width="136"
+      />
+      <div
+        style={
+          Object {
+            "float": "right",
+            "width": "100%",
+          }
+        }
+      >
+        <button
+          className="MuiButtonBase-root-73 MuiButton-root-47 MuiButton-contained-58 MuiButton-containedSecondary-60 MuiButton-raised-61 MuiButton-raisedSecondary-63 PlayersAppBar-menuButtonRight-6"
+          disabled={false}
+          id="Login"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-48"
+          >
+            Login
+          </span>
+          <span
+            className="MuiTouchRipple-root-76"
+          />
+        </button>
+        <button
+          className="MuiButtonBase-root-73 MuiButton-root-47 MuiButton-contained-58 MuiButton-containedSecondary-60 MuiButton-raised-61 MuiButton-raisedSecondary-63 PlayersAppBar-menuButtonRight-6"
+          disabled={false}
+          id="Register"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-48"
+          >
+            Register
+          </span>
+          <span
+            className="MuiTouchRipple-root-76"
+          />
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+`;
