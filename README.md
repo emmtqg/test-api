@@ -6,6 +6,8 @@ light of this, I created a pingpong game management platform to manage the offic
 teams (thanks to a great backend API!). Features of this platform include:
 
 ### Pages
+Screenshots of the UI follow.
+
 #### Home page | Roster _on "/" if not logged in, "/roster" if logged in._ Redirected here automatically on login/register.
 #### Splash  _on root "/splash" url_
 
@@ -20,6 +22,8 @@ teams (thanks to a great backend API!). Features of this platform include:
 ![login](https://user-images.githubusercontent.com/1939158/55672519-fd89fd00-5869-11e9-8612-a020a676f627.png)
 
 #### 404 error on invalid url entry
+
+![404](https://user-images.githubusercontent.com/1939158/55673848-7cd3fc80-587b-11e9-9d11-79754fd2830a.png)
 
 
 Once logged in or registered, you are transported to your roster (_on "/roster")
