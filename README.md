@@ -6,14 +6,18 @@ light of this, I created a pingpong game management platform to manage the offic
 teams (thanks to a great backend API!). Features of this platform include:
 
 ### Pages
-- Splash  _on root "/" url_
+- Home page | Roster _on "/" if not logged in, "/roster" if logged in._ Redirected here automatically on login/register.
+- Splash  _on root "/splash" url_
 - Login  _on "/login"_
 - Register _on "/register"_
+- 404 error on invalid url entry
 
-Once logged in or registered, you are transported to your roster (_on "/roster")
-where you can:
+Once logged in or registered, you are transported to your roster (_on "/roster") where you can:
+
 - Add a player _on /player/new and "+" at the top of the page_
 - Remove a player (with confirmation dialog) _on "X" roster column on roster table_
+
+A nice feature update might be to allow inline text field editing.
 
 ### Implementation
 
@@ -21,8 +25,7 @@ where you can:
 A configuration file is include to allow a single point of API definition specifications for Urls, fieldnames and test player definitions. They employ static getters so that the consuming files can access the required data via a "config.Resource" name.
 
 #### Styling
-I utilized (and played with!) Material UI (MUI) for the platform interface. It does add
-a lot of markup to the final HTML! The styling is in the .js component file and incorporated utilizing a __withStyles__ HOC. It is easy to manipulate these styles, or you can invest in defining your own theme utilizing Material UI's theme builder.
+I utilized (and played with!) Material UI (MUI) for the platform interface. It does add a lot of markup to the final HTML! The styling is in the .js component file and incorporated utilizing a __withStyles__ HOC. It is easy to manipulate these styles, or you can invest in defining your own theme utilizing Material UI's theme builder.
 
 Material UI utilizes the Roboto Google font which is included in the index.html file with via CDN call.
 
@@ -34,6 +37,8 @@ An __AuthHelperMethods.js__ file is included as in object in the routes.js file 
 The __apiCamelizedLookup__ object provides a fieldname check and crossreference for the form field names. It aids in translation of valid property names to whatever the API required (single point of definition between the state properties and api names). It was assumed if the ESLint rules did not allow underscores (as specified in the API names), then, rather than overriding the linter, a mechanism should be incorporated to allow any API to specify properties as required and they can then be updated in one location. If form fields are checked for testing, then the form component can also utilize the apiCamelizedLookup for field specifications.
 
 #### Testing
+I used Jest, Enzyme and Sinon to unit test the main modules. Any fetch operations were stubbed/mocked and the JWT authorization is checked via a Mock of the AuthHelperMethods loggedIn. This auth module writes the token to local storage and returns the user "loggedIn" status to componentWillMount queries from protected pages.
+
 The Material UI component "wraps" a new dimension to the unit testing. Each styled component is wrapped with a MUI "withStyles" HOC which applies the 'css in js' styles to the component. This required a little work with enzyme's shallow components to reach some of the component children while testing. The render pattern was:
 
 ```
@@ -49,11 +54,11 @@ The AuthHelperMethods.js (auth) methods were stubbed to eliminate calling the AP
 #### Wrap up
 The __lint:js__ and __lint:style__ tests run without errors.
 
-The e2e tests did not pass - I am investigating if the cause is the implementation of the authorization in __AuthHelperMethods.js__.  Because these methods perform the actual fetching and storing of the JWT token, return any data from the api, and perform the "loggedIn" test for the subscribing components, they are not seeing the stubbed token in the local storage created for the token value.
+The e2e tests did not pass - I am still investigating if the cause is the implementation of the authorization in __AuthHelperMethods.js__.  Because these methods perform the actual fetching and storing of the JWT token, return any data from the api,  perform the "loggedIn" test for the subscribing components, the stubbed token in the end to end tests are not loading the token in the local storage and the redirection on successful register/login is not enabled.
 
-I enjoyed (and still am) this challenge! It shows authorization schemes, API interfacing and the endless ways of implementing and testing UIs with current ES6 technologies. I used VSCode as my IDE which incorporated esLinting as I coded which helped with the implementation of javascript and formatting.
+I enjoyed (and still am) this challenge! It shows authorization schemes, API interfacing and the endless ways of implementing and testing UIs with current ES6 technologies. I used VSCode as my IDE which incorporated esLinting as I coded which helped with the implementation of javascript and formatting. I learned about the pros/cons of Material UI as far as testing goes, and dabbled with Sinon which I hadn't used before.
 
-TODO: e2e tests & Unit testing (I have an environment setup issue with jest and my babel setup). I have run all the user stories manually and they are successful.
+TODO: e2e tests.  I have run all the user stories manually and they are successful and fulfill the user stories outlined.
 
 
 ## Background
