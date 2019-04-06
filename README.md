@@ -6,16 +6,35 @@ light of this, I created a pingpong game management platform to manage the offic
 teams (thanks to a great backend API!). Features of this platform include:
 
 ### Pages
-- Home page | Roster _on "/" if not logged in, "/roster" if logged in._ Redirected here automatically on login/register.
-- Splash  _on root "/splash" url_
-- Login  _on "/login"_
-- Register _on "/register"_
-- 404 error on invalid url entry
+#### Home page | Roster _on "/" if not logged in, "/roster" if logged in._ Redirected here automatically on login/register.
+#### Splash  _on root "/splash" url_
 
-Once logged in or registered, you are transported to your roster (_on "/roster") where you can:
+![home](https://user-images.githubusercontent.com/1939158/55672516-f531c200-5869-11e9-99fb-acb26fc85148.png)
 
-- Add a player _on /player/new and "+" at the top of the page_
-- Remove a player (with confirmation dialog) _on "X" roster column on roster table_
+#### Register _on "/register"_
+
+![register](https://user-images.githubusercontent.com/1939158/55672521-fd89fd00-5869-11e9-985f-d4752ee7fbb0.png)
+
+#### Login  _on "/login"_
+
+![login](https://user-images.githubusercontent.com/1939158/55672519-fd89fd00-5869-11e9-8612-a020a676f627.png)
+
+#### 404 error on invalid url entry
+
+
+Once logged in or registered, you are transported to your roster (_on "/roster")
+
+![roster](https://user-images.githubusercontent.com/1939158/55672522-fd89fd00-5869-11e9-8132-8bf252c921c6.png)
+
+This is where a user can:
+
+#### Add a player _on /player/new and "+" at the top of the page_
+
+![new-player](https://user-images.githubusercontent.com/1939158/55672520-fd89fd00-5869-11e9-8b59-bfa621aef22b.png)
+
+#### Remove a player (with confirmation dialog) _on "X" roster column on roster table_
+
+![delete-confirm](https://user-images.githubusercontent.com/1939158/55672686-c9174080-586b-11e9-852d-8de75a6f689c.png)
 
 A nice feature update might be to allow inline text field editing.
 
@@ -60,7 +79,7 @@ I enjoyed (and still am) this challenge! It shows authorization schemes, API int
 
 TODO: e2e tests.  I have run all the user stories manually and they are successful and fulfill the user stories outlined.
 
-
+# Project Description (from original repo)
 ## Background
 The engineering team at Alchemy has built an (imaginary) game management platform.
 The platform has an API that allows you to create a manager(user) that allows them 
