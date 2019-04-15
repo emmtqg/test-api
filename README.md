@@ -84,7 +84,9 @@ I enjoyed (and still am) this challenge! It shows authorization schemes, API int
 TODO: e2e tests.  I have run all the user stories manually and they are successful and fulfill the user stories outlined.
 
 ## Updates:
-- Updated css to utilize scss with Material UI typeography theme definition for the rem based font resizing of the html element to facilitate rem measurements utilized throughout the component styling. This required defining a custom theme with the html element 62.5% resizing for the base (Material UI uses rems).
+- Updated styles to utilize scss with Material UI typography theme definition for the rem based font resizing of the html element to facilitate rem measurements utilized throughout the component styling. This required defining a custom theme with the html element 62.5% resizing for the base (Material UI uses rems).
+
+- Redefined directory structure to modularize Page fragments (forms, splash, roster table) and scss style files. Updated tests with the updated file structure. 
 
 # Project Description (from original repo)
 ## Background
