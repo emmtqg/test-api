@@ -16,16 +16,15 @@ import Typography from '@material-ui/core/Typography';
 import withStyles from '@material-ui/core/styles/withStyles';
 import green from '@material-ui/core/colors/green';
 
-import './SideBySideComponents.css';
-import config from './Config';
+import '../styles/SideBySideComponents.scss';
+import config from '../Config';
 
 const { apiCamelizedLookup } = config;
+
 const styles = theme => ({
   main: {
     width: 'auto',
     display: 'block', // Fix IE 11 issue.
-    // marginLeft: theme.spacing.unit * 3,
-    // marginRight: theme.spacing.unit * 3,
     [theme.breakpoints.up((400 + theme.spacing.unit) * 3 * 2)]: {
       width: 400,
       marginLeft: 'auto',
@@ -169,13 +168,13 @@ class NewPlayer extends Component {
               <div className="col">
                 <FormControl margin="normal" required className="almostWidth">
                   <InputLabel htmlFor="first_name">First Name</InputLabel>
-                  <Input id="first_name" name="first_name" autoComplete="first_name" autoFocus onChange={this.handleChange} />
+                  <Input id="firstName" name="first_name" autoComplete="first_name" autoFocus onChange={this.handleChange} />
                 </FormControl>
               </div>
               <div className="col">
                 <FormControl margin="normal" required className="justifyEnd">
                   <InputLabel htmlFor="last_name">Last Name</InputLabel>
-                  <Input id="last_name" name="last_name" autoComplete="last_name" onChange={this.handleChange} />
+                  <Input id="lastName" name="last_name" autoComplete="last_name" onChange={this.handleChange} />
                 </FormControl>
               </div>
             </div>

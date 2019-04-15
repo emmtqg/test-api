@@ -2,8 +2,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount, shallow } from 'enzyme';
 
-import NewPlayer from '../../src/components/NewPlayer';
-import AuthHelperMethods from '../../src/components/Auth/AuthHelperMethods';
+import NewPlayer from '../../src/components/pages/NewPlayer';
+import AuthHelperMethods from '../../src/components/auth/AuthHelperMethods';
 
 // All field forms are translated between the form and API property
 // names and the component state properties. This is defined in the

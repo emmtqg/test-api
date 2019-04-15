@@ -13,8 +13,9 @@ import Paper from '@material-ui/core/Paper';
 import AlertDialog from './AlertDialog';
 
 import RosterPlayer from './RosterPlayer';
-import './SideBySideComponents.css';
+import '../styles/SideBySideComponents.scss';
 
+// Layout styles
 const styles = theme => ({
   root: {
     minWidth: 500,
@@ -22,38 +23,42 @@ const styles = theme => ({
     flexGrow: 1,
     marginLeft: 'auto',
     marginRight: 'auto',
+    overflowX: 'auto',
+    fontSize: '1.6rem',
   },
   main: {
     width: 'auto',
     display: 'block', // Fix IE 11 issue.
     marginTop: 50,
     [theme.breakpoints.down('sm')]: {
-      marginLeft: 5,
-      marginRight: 5,
+      marginLeft: 'auto',
+      marginRight: 'auto',
     },
     [theme.breakpoints.up((400 + theme.spacing.unit) * 3 * 2)]: {
-      width: 400,
       marginLeft: 'auto',
       marginRight: 'auto',
     },
   },
   paper: {
-    minWidth: 600,
-    maxWidth: 720,
+    minWidth: 400,
+    maxWidth: 700,
     marginLeft: 'auto',
     marginRight: 'auto',
     marginTop: theme.spacing.unit * 8,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 3}px ${theme.spacing.unit * 3}px`,
+    padding: '.3rem',
   },
   table: {
-    minWidth: 500,
+    minWidth: 400,
     maxWidth: 700,
     marginTop: 10,
     marginLeft: 'auto',
     marginRight: 'auto',
+  },
+  tableCell: {
+    fontSize: '1.6rem',
   },
   fab: {
     margin: theme.spacing.unit,
@@ -69,7 +74,10 @@ const styles = theme => ({
   },
   col: {
     display: 'inline-block',
-    margin: '10 20',
+    margin: '10 10',
+  },
+  subTitle: {
+    marginBottom: '2rem',
   },
 });
 
@@ -241,17 +249,17 @@ class Roster extends Component {
               </Fab>
             </div>
           </div>
-          <Typography component="h6" variant="h6">
+          <Typography component="h6" variant="h6" className={classes.subTitle}>
             {message}
           </Typography>
           <Paper className={classes.root}>
             <Table className={classes.table}>
               <TableHead>
                 <TableRow>
-                  <TableCell>Player</TableCell>
-                  <TableCell align="right">Rating</TableCell>
-                  <TableCell align="right">Preferred Hand</TableCell>
-                  <TableCell align="center">Remove</TableCell>
+                  <TableCell className={classes.tableCell}>Player</TableCell>
+                  <TableCell className={classes.tableCell} align="right">Rating</TableCell>
+                  <TableCell className={classes.tableCell} align="right">Preferred Hand</TableCell>
+                  <TableCell className={classes.tableCell} align="center">Remove</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>

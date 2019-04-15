@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 import sinon from 'sinon';
 import PlayersAppBar from '../../src/components/PlayersAppBar';
-import AuthHelperMethods from '../../src/components/Auth/AuthHelperMethods';
+import AuthHelperMethods from '../../src/components/auth/AuthHelperMethods';
 
 let wrapper;
 const history = {

@@ -11,13 +11,13 @@ exports[`The Roster Table should render correctly 1`] = `
       id="Dialog"
     />
     <div
-      classes="Roster-alignTop-7"
+      classes="Roster-alignTop-8"
     >
       <div
-        className="Roster-col-8"
+        className="Roster-col-9"
       >
         <h5
-          className="MuiTypography-root-25 MuiTypography-h5-41"
+          className="MuiTypography-root-27 MuiTypography-h5-43"
         >
           <em>
             The
@@ -26,11 +26,11 @@ exports[`The Roster Table should render correctly 1`] = `
         </h5>
       </div>
       <div
-        className="Roster-col-8"
+        className="Roster-col-9"
       >
         <button
           aria-label="Add"
-          className="MuiButtonBase-root-71 MuiFab-root-61 MuiFab-sizeSmall-69 Roster-fab-5"
+          className="MuiButtonBase-root-73 MuiFab-root-63 MuiFab-sizeSmall-71 Roster-fab-6"
           disabled={false}
           onBlur={[Function]}
           onContextMenu={[Function]}
@@ -47,11 +47,11 @@ exports[`The Roster Table should render correctly 1`] = `
           type="button"
         >
           <span
-            className="MuiFab-label-62"
+            className="MuiFab-label-64"
           >
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root-74"
+              className="MuiSvgIcon-root-76"
               focusable="false"
               onClick={[Function]}
               role="presentation"
@@ -67,52 +67,52 @@ exports[`The Roster Table should render correctly 1`] = `
             </svg>
           </span>
           <span
-            className="MuiTouchRipple-root-130"
+            className="MuiTouchRipple-root-132"
           />
         </button>
       </div>
     </div>
     <h6
-      className="MuiTypography-root-25 MuiTypography-h6-42"
+      className="MuiTypography-root-27 MuiTypography-h6-44 Roster-subTitle-10"
     >
       
     </h6>
     <div
-      className="MuiPaper-root-83 MuiPaper-elevation2-87 MuiPaper-rounded-84 Roster-root-1"
+      className="MuiPaper-root-85 MuiPaper-elevation2-89 MuiPaper-rounded-86 Roster-root-1"
     >
       <table
-        className="MuiTable-root-110 Roster-table-4"
+        className="MuiTable-root-112 Roster-table-4"
       >
         <thead
-          className="MuiTableHead-root-111"
+          className="MuiTableHead-root-113"
         >
           <tr
-            className="MuiTableRow-root-112 MuiTableRow-head-115"
+            className="MuiTableRow-root-114 MuiTableRow-head-117"
           >
             <th
               aria-sort={null}
-              className="MuiTableCell-root-117 MuiTableCell-head-118"
+              className="MuiTableCell-root-119 MuiTableCell-head-120 Roster-tableCell-5"
               scope="col"
             >
               Player
             </th>
             <th
               aria-sort={null}
-              className="MuiTableCell-root-117 MuiTableCell-head-118 MuiTableCell-alignRight-127"
+              className="MuiTableCell-root-119 MuiTableCell-head-120 MuiTableCell-alignRight-129 Roster-tableCell-5"
               scope="col"
             >
               Rating
             </th>
             <th
               aria-sort={null}
-              className="MuiTableCell-root-117 MuiTableCell-head-118 MuiTableCell-alignRight-127"
+              className="MuiTableCell-root-119 MuiTableCell-head-120 MuiTableCell-alignRight-129 Roster-tableCell-5"
               scope="col"
             >
               Preferred Hand
             </th>
             <th
               aria-sort={null}
-              className="MuiTableCell-root-117 MuiTableCell-head-118 MuiTableCell-alignCenter-126"
+              className="MuiTableCell-root-119 MuiTableCell-head-120 MuiTableCell-alignCenter-128 Roster-tableCell-5"
               scope="col"
             >
               Remove
@@ -120,7 +120,7 @@ exports[`The Roster Table should render correctly 1`] = `
           </tr>
         </thead>
         <tbody
-          className="MuiTableBody-root-129"
+          className="MuiTableBody-root-131"
         />
       </table>
     </div>
