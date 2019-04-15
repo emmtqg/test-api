@@ -1,4 +1,4 @@
-import decode from 'jwt-decode';
+import decode from '../../../node_modules/jwt-decode';
 
 import config from '../Config';
 

@@ -83,6 +83,9 @@ I enjoyed (and still am) this challenge! It shows authorization schemes, API int
 
 TODO: e2e tests.  I have run all the user stories manually and they are successful and fulfill the user stories outlined.
 
+## Updates:
+- Updated css to utilize scss with Material UI typeography theme definition for the rem based font resizing of the html element to facilitate rem measurements utilized throughout the component styling. This required defining a custom theme with the html element 62.5% resizing for the base (Material UI uses rems).
+
 # Project Description (from original repo)
 ## Background
 The engineering team at Alchemy has built an (imaginary) game management platform.

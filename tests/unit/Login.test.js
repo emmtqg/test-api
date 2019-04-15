@@ -2,8 +2,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount, shallow } from 'enzyme';
 
-import Login from '../../src/components/Login';
-import AuthHelperMethods from '../../src/components/Auth/AuthHelperMethods';
+import Login from '../../src/components/pages/Login';
+import AuthHelperMethods from '../../src/components/auth/AuthHelperMethods';
 
 let UnwrappedShallowComponent;
 let wrapper;

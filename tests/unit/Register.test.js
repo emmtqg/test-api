@@ -3,8 +3,8 @@ import renderer from 'react-test-renderer';
 import { mount, shallow } from 'enzyme';
 import sinon from 'sinon';
 
-import Register from '../../src/components/Register';
-import AuthHelperMethods from '../../src/components/Auth/AuthHelperMethods';
+import Register from '../../src/components/pages/Register';
+import AuthHelperMethods from '../../src/components/auth/AuthHelperMethods';
 
 // All field forms are translated between the form and API property
 // names and the component state properties. This is defined in the

@@ -1,8 +1,9 @@
 // @flow
 import React from 'react';
-import AuthHelperMethods from './Auth/AuthHelperMethods';
+
+import AuthHelperMethods from './auth/AuthHelperMethods';
 import PlayersAppBar from './PlayersAppBar';
-import './App.css';
+import './styles/App.scss';
 
 const auth = new AuthHelperMethods();
 

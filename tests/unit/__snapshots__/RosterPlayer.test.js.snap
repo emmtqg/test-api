@@ -1,36 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The Roster Table Row (RosterPlayer) should generate a table row for roster that includes player info and a delete option 1`] = `"<tr class=\\"MuiTableRow-root-8\\"><td class=\\"MuiTableCell-root-13 MuiTableCell-alignLeft-21\\"> </td><td class=\\"MuiTableCell-root-13 MuiTableCell-alignRight-23\\">9000</td><td class=\\"MuiTableCell-root-13 MuiTableCell-alignRight-23\\">left</td><td class=\\"MuiTableCell-root-13 MuiTableCell-alignCenter-22 RosterPlayer-icon-4\\"><button class=\\"MuiButtonBase-root-35 MuiFab-root-25 MuiFab-sizeSmall-33 RosterPlayer-fab-6\\" tabindex=\\"0\\" type=\\"button\\" aria-label=\\"Delete\\"><span class=\\"MuiFab-label-26\\"><svg class=\\"MuiSvgIcon-root-38\\" focusable=\\"false\\" viewBox=\\"0 0 24 24\\" aria-hidden=\\"true\\" role=\\"presentation\\"><path d=\\"M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z\\"></path><path fill=\\"none\\" d=\\"M0 0h24v24H0z\\"></path></svg></span><span class=\\"MuiTouchRipple-root-47\\"></span></button></td></tr>"`;
+exports[`The Roster Table Row (RosterPlayer) should generate a table row for roster that includes player info and a delete option 1`] = `"<tr class=\\"MuiTableRow-root-6\\"><td class=\\"MuiTableCell-root-11 MuiTableCell-alignLeft-19 RosterPlayer-tableCell-1\\">liam neeson</td><td class=\\"MuiTableCell-root-11 MuiTableCell-alignRight-21 RosterPlayer-tableCell-1\\">9000</td><td class=\\"MuiTableCell-root-11 MuiTableCell-alignRight-21 RosterPlayer-tableCell-1\\">left</td><td class=\\"MuiTableCell-root-11 MuiTableCell-alignCenter-20 RosterPlayer-icon-2\\"><button class=\\"MuiButtonBase-root-33 MuiFab-root-23 MuiFab-sizeSmall-31 RosterPlayer-fab-4\\" tabindex=\\"0\\" type=\\"button\\" aria-label=\\"Delete\\"><span class=\\"MuiFab-label-24\\"><svg class=\\"MuiSvgIcon-root-36\\" focusable=\\"false\\" viewBox=\\"0 0 24 24\\" aria-hidden=\\"true\\" role=\\"presentation\\"><path d=\\"M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z\\"></path><path fill=\\"none\\" d=\\"M0 0h24v24H0z\\"></path></svg></span><span class=\\"MuiTouchRipple-root-45\\"></span></button></td></tr>"`;
 
 exports[`The Roster Table Row (RosterPlayer) should render correctly (match snapshot) 1`] = `
 <tr
-  className="MuiTableRow-root-8"
+  className="MuiTableRow-root-6"
 >
   <td
     aria-sort={null}
-    className="MuiTableCell-root-13 MuiTableCell-alignLeft-21"
+    className="MuiTableCell-root-11 MuiTableCell-alignLeft-19 RosterPlayer-tableCell-1"
   >
+    liam
      
+    neeson
   </td>
   <td
     aria-sort={null}
-    className="MuiTableCell-root-13 MuiTableCell-alignRight-23"
+    className="MuiTableCell-root-11 MuiTableCell-alignRight-21 RosterPlayer-tableCell-1"
   >
     9000
   </td>
   <td
     aria-sort={null}
-    className="MuiTableCell-root-13 MuiTableCell-alignRight-23"
+    className="MuiTableCell-root-11 MuiTableCell-alignRight-21 RosterPlayer-tableCell-1"
   >
     left
   </td>
   <td
     aria-sort={null}
-    className="MuiTableCell-root-13 MuiTableCell-alignCenter-22 RosterPlayer-icon-4"
+    className="MuiTableCell-root-11 MuiTableCell-alignCenter-20 RosterPlayer-icon-2"
   >
     <button
       aria-label="Delete"
-      className="MuiButtonBase-root-35 MuiFab-root-25 MuiFab-sizeSmall-33 RosterPlayer-fab-6"
+      className="MuiButtonBase-root-33 MuiFab-root-23 MuiFab-sizeSmall-31 RosterPlayer-fab-4"
       disabled={false}
       onBlur={[Function]}
       onClick={[Function]}
@@ -48,11 +50,11 @@ exports[`The Roster Table Row (RosterPlayer) should render correctly (match snap
       type="button"
     >
       <span
-        className="MuiFab-label-26"
+        className="MuiFab-label-24"
       >
         <svg
           aria-hidden="true"
-          className="MuiSvgIcon-root-38"
+          className="MuiSvgIcon-root-36"
           focusable="false"
           role="presentation"
           viewBox="0 0 24 24"
@@ -67,7 +69,7 @@ exports[`The Roster Table Row (RosterPlayer) should render correctly (match snap
         </svg>
       </span>
       <span
-        className="MuiTouchRipple-root-47"
+        className="MuiTouchRipple-root-45"
       />
     </button>
   </td>

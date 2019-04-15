@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import App from '../../src/components/App';
 import PlayersAppBar from '../../src/components/PlayersAppBar';
-import AuthHelperMethods from '../../src/components/Auth/AuthHelperMethods';
+import AuthHelperMethods from '../../src/components/auth/AuthHelperMethods';
 
 let wrapper;
 const auth = new AuthHelperMethods();

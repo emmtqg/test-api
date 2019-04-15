@@ -1,23 +1,23 @@
 import React from 'react';
 
-import amazing from '../assets/amazed-paddle.jpg';
-import './NotFoundURL.css';
-import './SideBySideComponents.css';
+import amazing from '../../assets/amazed-paddle.jpg';
+import '../styles/NotFoundURL.scss';
+import '../styles/SideBySideComponents.scss';
 
 const NotFoundURL = () => (
-  <div id="page404" className="plain error-page-wrapper background-color background-image">
+  <main id="page404" className="main error-page-wrapper background-color background-image">
     <div className="flexGrid">
       <div className="col">
         <div className="content-container">
-          <div className="head-line secondary-text-color">
+          <div className="head-line">
             404
           </div>
-          <div className="subheader primary-text-color">
+          <div className="subheader">
             Oops, the page you&#39;re <br />
             looking for does not exist.
           </div>
           <div className="clearfix" />
-          <div className="context primary-text-color">
+          <div className="context">
             <p>
               Check your URL if you self navigated!
             </p>
@@ -31,7 +31,7 @@ const NotFoundURL = () => (
         <img className="center" src={amazing} alt="Amazing 404 error page." />
       </div>
     </div>
-  </div>
+  </main>
 );
 
 export default NotFoundURL;

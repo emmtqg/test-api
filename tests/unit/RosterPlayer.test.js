@@ -2,14 +2,14 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 
-import RosterPlayer from '../../src/components/RosterPlayer';
+import RosterPlayer from '../../src/components/pages/RosterPlayer';
 
 let wrapper;
 
 // auth mocks for Promise return of getPlayers API call from AuthHelpers.js
 const player = {
-  first_name: 'liam',
-  last_name: 'neeson',
+  firstName: 'liam',
+  lastName: 'neeson',
   rating: 9000,
   handedness: 'left',
   id: '5c9fdeee310d217ff3901e67',
