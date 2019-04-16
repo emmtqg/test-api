@@ -112,7 +112,7 @@ class Register extends Component {
           isLoading: false,
         });
 
-        return this.props.history.replace('/');
+        return this.props.history.replace('/roster');
       })
       .catch((error) => {
         this.setState({
@@ -148,13 +148,13 @@ class Register extends Component {
               <div className="col">
                 <FormControl margin="normal" required className="almostWidth">
                   <InputLabel htmlFor="first_name">First Name</InputLabel>
-                  <Input id="first_name" name="first_name" autoComplete="first_name" autoFocus onChange={this.handleChange} />
+                  <Input id="firstName" name="first_name" autoComplete="first_name" autoFocus onChange={this.handleChange} />
                 </FormControl>
               </div>
               <div className="col">
                 <FormControl margin="normal" required className="justifyEnd">
                   <InputLabel htmlFor="last_name">Last Name</InputLabel>
-                  <Input id="last_name" name="last_name" autoComplete="last_name" onChange={this.handleChange} />
+                  <Input id="lastName" name="last_name" autoComplete="last_name" onChange={this.handleChange} />
                 </FormControl>
               </div>
             </div>
@@ -168,16 +168,16 @@ class Register extends Component {
             </FormControl>
             <FormControl margin="normal" required fullWidth>
               <InputLabel htmlFor="confirm_password">Confirm Password</InputLabel>
-              <Input name="confirm_password" type="password" id="confirm_password" onChange={this.handleChange} />
+              <Input id="confirmPassword" name="confirm_password" type="password" onChange={this.handleChange} />
             </FormControl>
             <Button
-              id="btnRegister"
+              id="register"
               type="submit"
               fullWidth
               variant="contained"
               color="primary"
               className={classes.submit}
-              onSubmit={this.handleSubmit}
+              onSubmit={this.handleFormSubmit}
             >
               Register Me!
             </Button>
