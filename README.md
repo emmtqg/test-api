@@ -73,20 +73,22 @@ This enabled method and access to the Components children.
 
 The AuthHelperMethods.js (auth) methods were stubbed to eliminate calling the API directly for these initial tests. Jest, Enzyme and Sinon were use for these. Enzyme and Sinon were used for stubs and spys when not bypassing the actual Component methods. Values in the auth module were mocked to signal loggedIn states (mostly checked in componentWillMount) and history.replace URL reassignments for navigation.
 
+The e2e tests were minorly updated to accomodate the New Player select dropdown implementation (instead of using cypress' .select to specify the selection, the selection was simulated by a dropdown menu click, then click on the option for test). The authorization component utilizes 'fetch' which cypress does not support (and all the form submit modules, when clicked, will eventually invoke this auth module). The XHR fallback for fetch, whatwg-fetch, was imported to allow cypress to stub the XHR requests.
+
+A Cypress wait was added to the Login command function in the e2e tests because there was intermittent racing problems when the entire test suite was run at once.
+
 
 #### Wrap up
-The __lint:js__ and __lint:style__ tests run without errors.
+The __lint:js__,  __lint:style__, and __e2e__ tests run without errors!
 
-The e2e tests did not pass - I am still investigating if the cause is the implementation of the authorization in __AuthHelperMethods.js__.  Because these methods perform the actual fetching and storing of the JWT token, return any data from the api,  perform the "loggedIn" test for the subscribing components, the stubbed token in the end to end tests are not loading the token in the local storage and the redirection on successful register/login is not enabled.
-
-I enjoyed (and still am) this challenge! It shows authorization schemes, API interfacing and the endless ways of implementing and testing UIs with current ES6 technologies. I used VSCode as my IDE which incorporated esLinting as I coded which helped with the implementation of javascript and formatting. I learned about the pros/cons of Material UI as far as testing goes, and dabbled with Sinon which I hadn't used before.
-
-TODO: e2e tests.  I have run all the user stories manually and they are successful and fulfill the user stories outlined.
+I enjoyed (and still am) this challenge! It shows authorization schemes, API interfacing and the endless ways of implementing and testing UIs with current ES6 technologies. I used VSCode as my IDE which incorporated esLinting as I coded which helped with the implementation of javascript and formatting. I learned about the pros/cons of Material UI as far as testing goes, and dabbled with Sinon and Cypess which I haven't used before.
 
 ## Updates:
 - Updated styles to utilize scss with Material UI typography theme definition for the rem based font resizing of the html element to facilitate rem measurements utilized throughout the component styling. This required defining a custom theme with the html element 62.5% resizing for the base (Material UI uses rems).
 
-- Redefined directory structure to modularize Page fragments (forms, splash, roster table) and scss style files. Updated tests with the updated file structure. 
+- Redefined directory structure to modularize Page fragments (forms, splash, roster table) and scss style files. Updated tests with the updated file structure.
+
+- Minor updates to form element ids for e2e tests, inclusion of the whatwg-fetch for the XHR fallback for the fetch utilized in the Auth component.
 
 # Project Description (from original repo)
 ## Background

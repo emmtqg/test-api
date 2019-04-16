@@ -16,6 +16,8 @@ describe('Delete Player', () => {
       .last()
       .click();
 
+    // click on confirmation window
+    cy.get('.btnYes').click();
     cy.get('.delete').should(($a) => {
       // should have found 3 elements
       expect($a).to.have.length(3);

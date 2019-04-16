@@ -1,4 +1,5 @@
 /* adapted from https://better-error-pages.statuspage.io/ */
+
 html {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -7,7 +8,7 @@ html {
 /* Variables */
 $primary-color: white;
 $secondary-color: rgba(245, 0, 87, 1);
-$background: rgba(63, 81, 181, 1); 
+$background: rgba(63, 81, 181, 1);
 
 .main.error-page-wrapper {
   padding: 0 5%;
@@ -29,14 +30,14 @@ $background: rgba(63, 81, 181, 1);
       opacity: 1;
     }
   }
-  
+
   .head-line {
     transition: color 0.2s linear;
     font-size: 4.8rem;
     line-height: 6rem;
     color: $primary-color;
     letter-spacing: -1px;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   .subheader {
@@ -44,7 +45,7 @@ $background: rgba(63, 81, 181, 1);
     font-size: 3rem;
     line-height: 4rem;
     color: $primary-color;
-  
+
     &::after {
       content: '';
       clear: both;
@@ -63,8 +64,8 @@ $background: rgba(63, 81, 181, 1);
       color: $primary-color;
       // margin: 7rem auto;
       text-align: center;
-    
-      &::nth-child( n+2 ) {
+
+      &:nth-child( n+2 ) {
         margin-top: 1.2rem;
       }
     }
@@ -74,11 +75,11 @@ $background: rgba(63, 81, 181, 1);
     vertical-align: middle;
     max-height: 100%;
     width: auto;
-    padding: .7rem;
+    padding: 0.7rem;
     margin-bottom: 1rem;
     border: $secondary-color solid;
   }
-  
+
   .buttons-container {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -88,7 +89,7 @@ $background: rgba(63, 81, 181, 1);
       color: $primary-color;
       border-color: $primary-color;
     }
-    
+
     .button {
       background-color: $primary-color;
       color: $secondary-color;
@@ -102,30 +103,31 @@ $background: rgba(63, 81, 181, 1);
       color: $primary-color;
       border: 2px solid $primary-color;
       border-radius: 10rem;
-      padding: .8rem 3rem .9rem;
+      padding: 0.8rem 3rem 0.9rem;
       display: inline-block;
 
-      &::hover {
+      &:hover {
         background-color: rgba(255, 255, 255, 0.05);
       }
 
-      &::first-child {
+      &:first-child {
         margin-right: 2.5rem;
       }
     }
   }
-} 
+}
 
 @media screen and ( max-width: 60rem ) {
 
   .main.error-page-wrapper {
+
     .header {
       font-size: 3.2rem;
     }
 
     .subheader {
       font-size: 2.2rem;
-      line-height: 3.0rem;
+      line-height: 3rem;
     }
 
     .context {
@@ -139,14 +141,14 @@ $background: rgba(63, 81, 181, 1);
 
       a {
         font-size: 1rem;
-        padding: .8rem 0 .7rem;
+        padding: 0.8rem 0 0.7rem;
         width: 45%;
         text-align: center;
 
-        &::first-child {
+        &:first-child {
           margin-right: 10%;
         }
       }
-    }   
+    }
   }
 }

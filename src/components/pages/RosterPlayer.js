@@ -45,12 +45,14 @@ const RosterPlayer = ({ player, cbRemovePlayer, classes }) => {
     handedness,
   } = player;
 
+  const deleteClass = `${classes.icon} delete`;
+
   return (
     <TableRow key={id}>
       <TableCell align="left" className={classes.tableCell}>{firstName} {lastName}</TableCell>
       <TableCell align="right" className={classes.tableCell}>{rating}</TableCell>
       <TableCell align="right" className={classes.tableCell}>{handedness}</TableCell>
-      <TableCell align="center" className={classes.icon}>
+      <TableCell align="center" className={deleteClass}>
         <Fab
           aria-label="Delete"
           size="small"

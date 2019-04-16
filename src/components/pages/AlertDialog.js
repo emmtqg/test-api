@@ -44,11 +44,11 @@ class AlertDialog extends Component {
             </DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Button onClick={cbHandleConfirm} color="primary" autoFocus>
+            <Button onClick={cbHandleConfirm} color="primary" className="btnYes" autoFocus>
               {yesButtonTxt}
             </Button>
             {(noButtonTxt !== '') ?
-              <Button onClick={this.props.cbHandleClose} color="primary">
+              <Button onClick={this.props.cbHandleClose} className="btnNo" color="primary">
                 {noButtonTxt}
               </Button> : null
             }

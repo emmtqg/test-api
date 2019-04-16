@@ -211,7 +211,7 @@ class NewPlayer extends Component {
               variant="contained"
               color="primary"
               className={classes.submit}
-              onSubmit={this.handleSubmit}
+              onSubmit={this.handleFormSubmit}
             >
               Add Player
             </Button>
