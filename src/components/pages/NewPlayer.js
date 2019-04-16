@@ -57,8 +57,8 @@ const styles = theme => ({
 // Values get passed to the API
 const handedness = {
   NONE_SPECIFIED: 'none',
-  LEFT: 'left',
-  RIGHT: 'right',
+  LEFT: 'Left',
+  RIGHT: 'Right',
 };
 
 class NewPlayer extends Component {
@@ -82,7 +82,7 @@ class NewPlayer extends Component {
   }
 
   componentWillMount() {
-    // Here is a great place to redirect someone who is already logged in
+    // Here is a great place to redirect someone who is not already logged in
     if (!this.props.auth.loggedIn()) {
       this.props.history.replace('/');
     }
@@ -185,6 +185,7 @@ class NewPlayer extends Component {
             <FormControl className={classes.formControl}>
               <InputLabel htmlFor="handedness">Choose</InputLabel>
               <Select
+                // native
                 value={this.state.handedness}
                 onChange={this.handleChange}
                 required
@@ -198,18 +199,19 @@ class NewPlayer extends Component {
                 <MenuItem value="" id="handedness.NONE">
                   <em>None</em>
                 </MenuItem>
-                <MenuItem value={handedness.RIGHT}>Right</MenuItem>
-                <MenuItem value={handedness.LEFT}>Left</MenuItem>
+                <MenuItem id="Right" data-menu-item="right" value={handedness.RIGHT}>Right</MenuItem>
+                <MenuItem id="Left" data-menu-item="left" value={handedness.LEFT}>Left</MenuItem>
               </Select>
-              <FormHelperText>Preferred Paddle Hand</FormHelperText>
+              <FormHelperText>Paddle Handedness</FormHelperText>
             </FormControl>
             <Button
+              id="create"
               type="submit"
               fullWidth
               variant="contained"
               color="primary"
               className={classes.submit}
-              onSubmit={this.handleSubmit}
+              onSubmit={this.handleFormSubmit}
             >
               Add Player
             </Button>

@@ -54,7 +54,6 @@ class Login extends Component {
       email: '',
       password: '',
       remember: false,
-      isAuthorized: false,
       message: '',
       messageSuggest: '',
     };
@@ -123,7 +122,7 @@ class Login extends Component {
             {this.state.message}<br />
             {this.state.messageSuggest}
           </Typography>
-          <form id="login" className={classes.form} onSubmit={this.handleFormSubmit}>
+          <form id="formLogin" className={classes.form} onSubmit={this.handleFormSubmit}>
             <FormControl margin="normal" required fullWidth>
               <InputLabel htmlFor="email">Email Address</InputLabel>
               <Input id="email" name="email" autoComplete="email" autoFocus onChange={this.handleChange} />
@@ -134,7 +133,7 @@ class Login extends Component {
             </FormControl>
             <Button
               type="submit"
-              id="btnSubmit"
+              id="login"
               fullWidth
               variant="contained"
               color="primary"

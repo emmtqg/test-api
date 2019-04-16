@@ -20,7 +20,12 @@ describe('Add player page', () => {
     cy.get('#firstName').type('Tom');
     cy.get('#lastName').type('Riddle');
     cy.get('#rating').type('10');
-    cy.get('#handedness').select('Right');
+
+    // material ui wraps a dropdown menu
+    cy.get('#handedness').closest('div[required]').click();
+    cy.get('[data-menu-item="right"]').click();
+    // cy.get('#handedness').select('Right');
+
     cy.get('#create').click();
     cy.url().should('eq', 'http://localhost:3000/roster');
     cy.contains('Tom');

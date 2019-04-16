@@ -73,7 +73,7 @@ describe('The Register Form should', () => {
     formNames.forEach((element) => {
       it(` checking ${element} has a defined onChange function`, () => {
         // MUI returning multiple nodes with #text_field, get the first with props
-        input = wrapper.find(`#${element}`).first();
+        input = wrapper.find(`[name="${element}"]`).first();
         expect(input.props('onChange')).toBeDefined();
         expect(typeof input.props('onChange').onChange === 'function').toBe(true);
       });
@@ -81,7 +81,7 @@ describe('The Register Form should', () => {
 
     formNames.forEach((element, index) => {
       it(` checking ${element} updates state property on change`, () => {
-        input = UnwrappedShallowComponent.find(`#${element}`).first();
+        input = UnwrappedShallowComponent.find(`[name="${element}"]`).first();
         input.simulate('change', { target: { name: element, value: 'Ping' } });
         expect(UnwrappedShallowComponent.state(camelizedNames[index])).toBe('Ping');
       });
@@ -102,12 +102,12 @@ describe('The Register Form should', () => {
       it('process submit event for Register Me', () => {
         // fill in the form
         formNames.forEach((element) => {
-          input = UnwrappedShallowComponent.find(`#${element}`).first();
+          input = UnwrappedShallowComponent.find(`[name="${element}"]`).first();
           input.simulate('change', { target: { name: element, value: 'Ping' } });
         });
 
         // make confirm password differ to bump out of handleFormSubmit
-        input = UnwrappedShallowComponent.find('#confirm_password').first();
+        input = UnwrappedShallowComponent.find('[name="confirm_password"]').first();
         input.simulate('change', { target: { name: 'confirm_password', value: 'abcd' } });
 
         let prevented = false;
@@ -123,7 +123,7 @@ describe('The Register Form should', () => {
 
         // fill in the form
         formNames.forEach((element) => {
-          input = UnwrappedShallowComponent.find(`#${element}`).first();
+          input = UnwrappedShallowComponent.find(`[name="${element}"]`).first();
           input.simulate('change', { target: { name: element, value: 'Ping' } });
         });
 
@@ -141,15 +141,15 @@ describe('The Register Form should', () => {
         const unwrappedWrap = wrap.first().shallow();
 
         // fill in the form
-        input = unwrappedWrap.find('#first_name').first();
+        input = unwrappedWrap.find('#firstName').first();
         input.simulate('change', { target: { name: 'first_name', value: 'Same' } });
-        input = unwrappedWrap.find('#last_name').first();
+        input = unwrappedWrap.find('#lastName').first();
         input.simulate('change', { target: { name: 'last_name', value: 'Smith' } });
         input = unwrappedWrap.find('#email').first();
         input.simulate('change', { target: { name: 'email', value: 'a@b.com' } });
         input = unwrappedWrap.find('#password').first();
         input.simulate('change', { target: { name: 'password', value: 'foozball' } });
-        input = unwrappedWrap.find('#confirm_password').first();
+        input = unwrappedWrap.find('#confirmPassword').first();
         input.simulate('change', { target: { name: 'confirm_password', value: 'foozball' } });
 
         // Call submit and mock Auth.register to return resolved promise

@@ -29,15 +29,12 @@ main {
 }
 
 @media screen and ( max-width: 60rem ) {
+
   .main {
     max-width: 95%;
   }
 
   .flexGrid {
     flex-direction: column;
-
-    // .col {
-    //   // width: 100%;
-    // }
   }
 }

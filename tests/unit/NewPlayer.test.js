@@ -73,7 +73,7 @@ describe('The New Player Form should', () => {
     const formNames = Object.keys(apiCamelizedLookupForNewPlayer);
     const formValues = Object.values(apiCamelizedLookupForNewPlayer);
     let input;
-    formNames.forEach((element) => {
+    formValues.forEach((element) => {
       it(` checking ${element} has a defined onChange function`, () => {
         // MUI returning multiple nodes with #text_field, get the first with props
         input = wrapper.find(`#${element}`).first();
@@ -83,11 +83,13 @@ describe('The New Player Form should', () => {
       });
     });
 
-    formNames.forEach((element, index) => {
+    // formValues is used because the first_name, last_name ids in
+    // the form were updated for e2e tests which check camelized values.
+    formValues.forEach((element, index) => {
       it(` checking ${element} updates component state on change`, () => {
         input = UnwrappedShallowComponent.find(`#${element}`).first();
-        if ((element === 'first_name') || (element === 'last_name')) {
-          input.simulate('change', { target: { name: element, value: 'Ping' } });
+        if ((element === 'firstName') || (element === 'lastName')) {
+          input.simulate('change', { target: { name: formNames[index], value: 'Ping' } });
           expect(UnwrappedShallowComponent.state(formValues[index])).toBe('Ping');
         } else if (element === 'rating') {
           input.simulate('change', { target: { name: element, value: '9000' } });

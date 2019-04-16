@@ -1,3 +1,4 @@
+import 'whatwg-fetch'; // Cypress e2e tests do not have .fetch defined
 import decode from '../../../node_modules/jwt-decode';
 
 import config from '../Config';

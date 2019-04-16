@@ -78,7 +78,7 @@ exports[`The New Player Form should render correctly 1`] = `
                 autoFocus={true}
                 className="MuiInputBase-input-127 MuiInput-input-112"
                 disabled={false}
-                id="first_name"
+                id="firstName"
                 name="first_name"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -116,7 +116,7 @@ exports[`The New Player Form should render correctly 1`] = `
                 autoComplete="last_name"
                 className="MuiInputBase-input-127 MuiInput-input-112"
                 disabled={false}
-                id="last_name"
+                id="lastName"
                 name="last_name"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -222,12 +222,13 @@ exports[`The New Player Form should render correctly 1`] = `
         <p
           className="MuiFormHelperText-root-145 MuiFormHelperText-filled-151"
         >
-          Preferred Paddle Hand
+          Paddle Handedness
         </p>
       </div>
       <button
         className="MuiButtonBase-root-179 MuiButton-root-153 MuiButton-contained-164 MuiButton-containedPrimary-165 MuiButton-raised-167 MuiButton-raisedPrimary-168 MuiButton-fullWidth-178 NewPlayer-submit-5"
         disabled={false}
+        id="create"
         onBlur={[Function]}
         onContextMenu={[Function]}
         onFocus={[Function]}
@@ -236,6 +237,7 @@ exports[`The New Player Form should render correctly 1`] = `
         onMouseDown={[Function]}
         onMouseLeave={[Function]}
         onMouseUp={[Function]}
+        onSubmit={[Function]}
         onTouchEnd={[Function]}
         onTouchMove={[Function]}
         onTouchStart={[Function]}

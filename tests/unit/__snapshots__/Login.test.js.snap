@@ -52,7 +52,7 @@ exports[`The Login Form should render correctly 1`] = `
     </h6>
     <form
       className="Login-form-4"
-      id="login"
+      id="formLogin"
       onSubmit={[Function]}
     >
       <div
@@ -127,7 +127,7 @@ exports[`The Login Form should render correctly 1`] = `
       <button
         className="MuiButtonBase-root-159 MuiButton-root-133 MuiButton-contained-144 MuiButton-containedPrimary-145 MuiButton-raised-147 MuiButton-raisedPrimary-148 MuiButton-fullWidth-158 Login-submit-5"
         disabled={false}
-        id="btnSubmit"
+        id="login"
         onBlur={[Function]}
         onContextMenu={[Function]}
         onFocus={[Function]}
